@@ -7,6 +7,7 @@ import FeatureItems from "./FeatureItems";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.updateFeature = this.updateFeature.bind(this);
     this.state = {
       selected: {
         Processor: {
@@ -38,7 +39,6 @@ class App extends Component {
   }
 
   render() {
-
     return (
       <div className="App">
         <Header />
